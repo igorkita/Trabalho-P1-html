@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">    
     <link rel="stylesheet" href="contato.html">
     <title>Cadu Bikes </title>
     <link rel="shortcut icon" href="../favicons/favicon.jpg.ico" type="image/x-icon">
@@ -16,12 +17,22 @@
             <h1 class="cadu">Bikes do Cadu</h1>
         </div>
             
-        <ul>
-        <a href="#"><li>Início</li></a>
-           <a href="#"><li>Sobre</li></a>
-           <a href="#"><li>Produtos</li></a>
-           <a href="#"><li>Contato</li></a>
-           <a href="login.html" id="inscreva-se-button"><li>Já tem uma conta?</li></a>
+        <ul class="ul_margin">
+            <li>
+                <a href="#">Início</a>
+            </li>
+            <li>
+                <a href="horario.html">Sobre</a>
+            </li>
+            <li>
+                <a href="#">Produtos</a>
+            </li>
+            <li>
+                <a href="#">Contato</a>
+            </li>
+            <li>
+                <a href="login.html" id="inscreva-se-button">Já tem uma conta?</a>
+            </li>
         </ul>
     </header>
     <main>
@@ -29,16 +40,28 @@
             <h2>Bicicleta GTS SPREE 8000</h2>
             <p>O modelo GTS SPREE 8000 de bicicleta é projetado para desempenho e versatilidade, adequado tanto para ciclistas iniciantes quanto para entusiastas. Com um quadro leve, geralmente de alumínio ou fibra de carbono, oferece durabilidade e manobrabilidade. Seus componentes incluem um sistema de marchas eficiente, freios a disco potentes, e pneus adaptáveis para diferentes tipos de terreno, garantindo uma condução suave em estradas e trilhas. O design ergonômico proporciona conforto em trajetos longos, enquanto a geometria do quadro facilita a postura ideal do ciclista. Ideal para quem busca uma bike versátil e confiável
             </p>
-            <form>
-                <input type="text" placeholder="Nome"><br>
-                <input type="email" placeholder="E-mail"><br>
-                <input type="text" placeholder="WhatsApp"><br>
-                <input type="submit" value="Enviar"><br>
+            <form id="solicitacao_user">
+                <input type="text"  id="txtNome"     placeholder="Nome"><br>
+                <span class="input_error" id="error_nome">Nome inválido ou incorreto</span>
+                <input type="email" id="txtEmail"    placeholder="E-mail"><br>
+                <span class="input_error" id="error_email">E-mail inválido ou incorreto</span>
+                <input type="text"  id="txtWhatsApp" placeholder="WhatsApp"><br>
+                <span class="input_error" id="error_whatsaap">WhatsApp Inválido ou incorreto</span>
+                <button class="button" type="button" onclick="entrar_contato()">Enviar</button>
             </form>
         </aside>
         <article>
             <img class="img_bike" src="../imagens/bike-removebg-preview.png"alt="bike">
         </article>
     </main>
+    <div id="modal" class="modal">
+        <div class="modal_content">
+             <button class="close" onclick="close_modal()">&times;</button>
+            <h2>Sucesso</h2>
+            <p>Sua solicitação foi enviada com sucesso.</p>
+        </div>
+    </div>
+    
+    <script src="../script.js"></script>
 </body>
 </html> 

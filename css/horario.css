@@ -1,0 +1,32 @@
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #909090;
+}
+
+.tabela{
+    background-color: #707070;
+    padding: 8px;
+    
+}
+
+.titulo_div{
+    
+}
+
+.titulo {
+    color: yellowgreen;
+}
+
+th {
+    padding: 12px;
+    color: yellowgreen;
+}
+
+td{
+    color: white;
+    text-align: center;
+}

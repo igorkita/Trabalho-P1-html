@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../favicons/favicon.jpg.ico" type="image/x-icon">
     <title>Realizar Login</title>
 </head>
 <body>
-    <div class="main">   
-        
-        <div class="div_form">
-            <h1 class="titulo_login">Realizar Login</h1>
-            <form class="form" action="#">
-                <label class="label_input" for="textNome">Nome</label>
-                <input class="style_input" type="text" name="textNome">
-                <label class="label_input" for="email">E-mail</label>
-                <input class="style_input" type="email" name="email">
-                <label class="label_input" for="senha">Senha</label>
-                <input class="style_input" type="password" name="senha">
-                <button class="button" type="submit">Enviar</button>
-            </form>
+    <div class="main">           
+        <h2 class="titulo_de_login" id="titulo_conta">Realizar Login</h2>
             
-        </div>
+        <form action="index.html"  id="entrar_conta" >
+            <input class="class_input" type="email" id="txtEmail" placeholder="Digite seu e-mail..."><br>
+            <span class="input_error" id="error_email">E-mail incorreto ou inválido</span><br>
+            <input class="class_input" type="password" id="txtSenha" placeholder="Digite sua senha..."><br>
+            <label class="input_error" id="error_password">Senha incorreta ou inválida</label><br>
+            <button class="button_entrar" type="button" onclick="entrar_conta()">Entrar</button><br>
+        </form>
     </div>
+<script src="../script.js"></script>
 </body>
 </html>

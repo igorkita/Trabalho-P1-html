@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    background-color: #18181b;
+    color: white;
+    max-width: 100%;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    background-color: #09090b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo_empresa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 32px;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+.icone{
+    margin-right: 15px;
+}
+
+#cadu{
+    font-weight: bold;
+}
+
+li{
+    display: inline-block;
+    margin-top: 1px;
+}
+
+a{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.ul_margin{
+    margin-right: 22px;
+}
+
+a:hover{
+    color: rgb(248, 254, 139)    
+}
+
+#inscreva-se-button{
+    border: 2px solid;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: 32px; 
+    margin-right: 32px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p{
+    padding: 1px;
+    font-weight: 200px;
+    line-height: 25px;
+    max-width: 700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aside{
+    margin-right: 350px;
+}
+
+.img_bike{
+    margin-top: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.button {
+    height: 50px;
+    width: 50%;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: none;
+}
+
+input{
+    margin-top: 20px;
+    height: 15px;
+    padding: 15px;
+    border-radius: 16px;
+    border: none;
+    font-size: 15px;
+}
+
+.input_error {
+    color: red;
+    font-style:oblique;
+    display:none;
+}
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.modal_content{
+    background-color: yellowgreen;
+    margin: 20% auto;
+    width: 300px;
+    height: 180px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.close{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
+}

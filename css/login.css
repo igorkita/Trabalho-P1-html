@@ -9,50 +9,52 @@ body {
     background-size: cover;
 }
 
-.titulo_login {
-   color: yellowgreen;
-   margin-left: 40px;
-}
 
-.label_input {
-    font-weight: bold;
-    margin-top: 4px;
-
-    
-}
-
-.style_input {
-    outline: none;
-    height: 24px;
-    width: 300px;
-    background-color: #424242;
-    border: none;
-    color: white;
-    margin-top: 4px;
-    box-shadow: 2px 2px 8px  yellowgreen;
-}
 .main {
-    background-color: #303030;
     display: flex;
+    background-color: #404040;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
     align-items: center;
     justify-content: center;
-    height: 350px;
-    width: 400px;
+    text-align: center;
     border-radius: 8px;
-
+    padding: 16px;
 }
-.form {
-    display: flex;
-    flex-direction: column;
+
+.titulo_de_login {
     color: yellowgreen;
 }
 
-.button{
-    padding: 10px 0;
-    margin-top: 14px;
-    background-color: yellowgreen;
-    color: white;
-    font-weight: bold;
+.class_input {
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    background-color: #606060;
     border: none;
+    color: white;
+
 }
 
+.class_input::placeholder {
+    color: yellowgreen;
+  }
+
+.input_error{
+    color: red;
+    font-style: italic;
+    display: none;  
+    margin-top: 4px;
+} 
+
+.button_entrar{
+    background-color: yellowgreen;
+    color: white;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    width: 100%;
+    
+}
