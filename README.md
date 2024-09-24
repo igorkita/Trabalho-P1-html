@@ -17,5 +17,5 @@
 
 ## Authors
 
-Igor Enzo da Silva Kita - RA: 1992614 
+Igor Enzo da Silva Kita - RA: 1992614<br>
 GitHub - https://github.com/igorkita
