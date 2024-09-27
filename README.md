@@ -13,7 +13,7 @@
 
 ![Login Landing Page](./imagens_readme/login.png)
 
-![Horário Funciomento Landing Page](./imagens_readme/horario%20funcionamento.png)
+![Horário Funciomento Landing Page](./)
 
 ## Authors
 
